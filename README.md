@@ -10,9 +10,9 @@ whether text contains positive or negative sentiment.
 ##My goal
 
 My goal was to create a machine learning model without using ML frameworks to show that I can:
--think algorithmically
--structure Java projects well
--implement mathematical concepts (probabilities, priors, train/test evaluation) in code.
+- think algorithmically
+- structure Java projects well
+- implement mathematical concepts (probabilities, priors, train/test evaluation) in code.
 
 I believe it is an important skill to understand how things work under the hood.
 
@@ -27,9 +27,9 @@ I believe it is an important skill to understand how things work under the hood.
 
 ##Tech stack
 
--Java 17
--Maven
--Object-oriented design, with no external ML libraries
+- Java 17
+- Maven
+- Object-oriented design, with no external ML libraries
 
 ##Project structure
 
