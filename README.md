@@ -33,7 +33,7 @@ I believe it is an important skill to understand how things work under the hood.
 
 ##Project structure
 
-"Data Loader" -reads training and test data
-"TextNorm" - handles text normalization
-"Main" - example run: train the model and classifies new text
-"NaiveBayes" - training and prediction logic
+- "Data Loader" -reads training and test data
+- "TextNorm" - handles text normalization
+- "Main" - example run: train the model and classifies new text
+- "NaiveBayes" - training and prediction logic
