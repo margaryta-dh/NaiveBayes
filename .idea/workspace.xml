@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609f1952-841e-4b60-8702-72add8423fc1" name="Changes" comment="changed" />
+    <list default="true" id="609f1952-841e-4b60-8702-72add8423fc1" name="Changes" comment="changed">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="11" />
@@ -71,7 +77,7 @@
       <workItem from="1764630601213" duration="215000" />
       <workItem from="1764630874658" duration="3482000" />
       <workItem from="1764715162544" duration="2525000" />
-      <workItem from="1764719169705" duration="4301000" />
+      <workItem from="1764719169705" duration="5368000" />
     </task>
     <task id="LOCAL-00001" summary="ready bayes">
       <option name="closed" value="true" />
@@ -105,7 +111,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765488167549</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed">
+      <option name="closed" value="true" />
+      <created>1765491040994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765491040994</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed">
+      <option name="closed" value="true" />
+      <created>1765491108060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765491108060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
