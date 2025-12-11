@@ -28,7 +28,7 @@ public class TextNorm{
             if (w.length()<=1&& !Character.isDigit(w.charAt(0)))continue;//länge <=1 weg (a,1,x...)
             if (STOPWORDS.contains(w))continue;//(stopwörter weg)
             tokens.add(w); //den rest in die Liste aufnehmen
-            //Der Film war großartig, aber etwas lang!!! 10/10“=>["film","großartig","etwas","lang","10","10"]
+            //Der Film war großartig, aber etwas lang!!! 10/10=>["film","großartig","etwas","lang","10","10"]
         }
         return tokens;
 
