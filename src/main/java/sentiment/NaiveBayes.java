@@ -29,7 +29,7 @@ public class NaiveBayes {
             }
             int tokenSum =0;
             for(String text:texts){
-                List<String>tokens =TextUtils.tokensize(text);
+                List<String>tokens =TextNorm.tokensize(text);
                 for(String tok:tokens){
                     vocabulary.add(tok);
 
@@ -71,7 +71,7 @@ public class NaiveBayes {
 
     /** Wahrscheinlichkeiten pro Klasse */
     public Map<String, Double> predictProba(String text) {
-        List<String> tokens = TextUtils.tokensize(text);
+        List<String> tokens = TextNorm.tokensize(text);
 
         // log-Scores sammeln
         Map<String, Double> logScore = new HashMap<String, Double>();
