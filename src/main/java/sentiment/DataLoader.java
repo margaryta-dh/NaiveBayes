@@ -41,7 +41,7 @@ public class DataLoader {
         }/*alles im finally wird garantiert ausgeführt, auch wenn in try ein return oer exception war.*/
         return lines;
     }
-/*Alltagsbeispiel fürs bessere Verständnis:
+/*fürs bessere Verständnis:
 InputStream = Wasserhahn aufdrehen.
 
 BufferedReader = Glas unter den Hahn halten.
@@ -50,8 +50,8 @@ Lesen = Wasser ins Glas laufen lassen.
 
 close() = Hahn wieder zudrehen.
 
-Wenn du den Hahn nicht zudrehst, läuft das Wasser (und die Rechnung 💸) weiter, auch wenn du das Glas nicht mehr benutzt.
-→ Darum immer „zumachen“ (close).*/
+Wenn du den Hahn nicht zudrehst, läuft das Wasser weiter, auch wenn du das Glas nicht mehr benutzt.
+=>Darum immer close*/
     public static Map<String, List<String>> loadLabeledFromClasspath(String posRes, String negRes) throws IOException {
         Map<String, List<String>> data = new HashMap<String, List<String>>();//erstellt eine leere Hash-Map. Typ:Key =String, Value =List<String>
         data.put("pos", readLinesFromClasspath(posRes));//liest die Datei aus resoursen train zB. und gibt eine List<Stirng> zurück ->jede Zeile ein Satz.
@@ -63,23 +63,21 @@ Wenn du den Hahn nicht zudrehst, läuft das Wasser (und die Rechnung 💸) weite
 /*Zusammenfassung
 Liest Textdateien aus den Ressourcen
 
-Dateien liegen unter src/main/resources/...
-
-Zugriff erfolgt über getResourceAsStream("/pfad/zur/datei.txt")
+Dateien liegen unter src/main/resources
 
 Geht Zeile für Zeile durch
 
 readLine() liest eine Zeile bis zum Zeilenumbruch
 
-trim() entfernt nur führende/abschließende Leerzeichen, Tabs, Zeilenumbrüche
+trim() entfernt nur führende oder abschließende Leerzeichen, Tabs, Zeilenumbrüche
 
-Leere Zeilen werden ignoriert → kein „Müll“ in den Daten
+Leere Zeilen werden ignoriert
 
 Speichert die Sätze in einer Liste
 
-Jede nicht-leere, gesäuberte Zeile → ein Element in List<String>
+Jede nichtleere und gesäuberte Zeile ist ein Element in List<String>
 
-Verpackt die Listen in eine Map
+Verpackt diese Listen in eine Map
 
 Schlüssel "pos" → Liste mit allen positiven Beispielen
 
