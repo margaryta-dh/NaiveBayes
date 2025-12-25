@@ -69,11 +69,9 @@ public class NaiveBayes {
         return Math.log(num / den);
     }
 
-    /** Wahrscheinlichkeiten pro Klasse */
+    /** Wahrscheinlichkeiten pro Klasse: */
     public Map<String, Double> predictProba(String text) {
         List<String> tokens = TextNorm.tokensize(text);
-
-        // log-Scores sammeln
         Map<String, Double> logScore = new HashMap<String, Double>();
         for (String clazz : docCountPerClass.keySet()) {
             double s = logPrior(clazz);
@@ -83,7 +81,6 @@ public class NaiveBayes {
             logScore.put(clazz, Double.valueOf(s));
         }
 
-        // numerisch stabile Softmax über logScores
         double max = Double.NEGATIVE_INFINITY;
         for (Double v : logScore.values()) {
             if (v.doubleValue() > max) max = v.doubleValue();
@@ -102,7 +99,7 @@ public class NaiveBayes {
         return proba;
     }
 
-    /** Bestes Label */
+    /** Bestes: */
     public String predict(String text) {
         Map<String, Double> proba = predictProba(text);
         String best = null;
